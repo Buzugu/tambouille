@@ -25,15 +25,19 @@ class MainScreen extends Component {
               <h2>Découvrez</h2>
               <h2>nos tambouilles</h2>
             </header>
-            {Object.keys(filters).map(cat => (
-              <NavLink
-                activeClassName={css.active}
-                key={cat}
-                className={css[filters[cat].icon]}
-                onClick={this.scrollToMainScreen}
-                to={`/categories/${cat}`}
-              >{filters[cat].name}</NavLink>
-            ))}
+            <div className={css.linkContainers}>
+              {Object.keys(filters).map(cat => (
+                <NavLink
+                  activeClassName={css.active}
+                  key={cat}
+                  className={css[filters[cat].icon]}
+                  onClick={this.scrollToMainScreen}
+                  to={`/categories/${cat}`}
+                >{
+                  filters[cat].name.split('|').map(text => (<span>{text}<br/></span>))
+                }</NavLink>
+              ))}
+            </div>
           </nav>
           <div className={css.content}>
             <Switch>
