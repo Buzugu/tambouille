@@ -77,7 +77,7 @@ export const filters = {
     icon: 'ico_double_face',
   },
   3: {
-    name: 'Green|Washing',
+    name: 'Alibi|Vert',
     description: 'La politique, c’est aussi l’art des multiples alliances et des trahisons déguisées. En effet, le Parti Socialiste, ne souhaitant pas se confronter à ses anciens camarades partis chez En Marche, a décidé de sceller un accord électorale avec Europe Ecologie Les Verts, leur cédant les cirsconscriptions dans lesquelles cet affrontement avec leurs  compères auraient pu avoir lieu.',
     icon: 'ico_alibi_vert',
   },
@@ -87,12 +87,12 @@ export const filters = {
     icon: 'ico_fauteuil',
   },
   5: {
-    name: 'Macron|Lovers',
+    name: 'Macron|Compatible',
     description: 'Les candidats PS macron-compatibles.',
     icon: 'ico_macronlover',
   },
   6: {
-    name: 'Coup|Du Lapin',
+    name: 'Coup|De Bluff',
     description: 'Étude statistique sur la société civile EM.',
     icon: 'ico_lapin',
   },

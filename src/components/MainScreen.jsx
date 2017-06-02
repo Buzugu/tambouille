@@ -34,7 +34,7 @@ class MainScreen extends Component {
                   onClick={this.scrollToMainScreen}
                   to={`/categories/${cat}`}
                 >{
-                  filters[cat].name.split('|').map(text => (<span>{text}<br/></span>))
+                  filters[cat].name.split('|').map((text, i) => (<span key={i}>{text}<br/></span>))
                 }</NavLink>
               ))}
             </div>
