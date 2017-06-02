@@ -32,7 +32,7 @@
 
   nav {
     background: $dark;
-    height: 15vh;
+    height: calc(20vh + 20px);
     position: relative;
     text-align: center;
     z-index: 100;
@@ -67,7 +67,7 @@
 .linkContainers {
   display: flex;
   justify-content: center;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .ico_cadeau {

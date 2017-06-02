@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
-import smoothscroll from 'smoothscroll';
 
 import css from './MainScreen.scss';
 
@@ -11,11 +10,6 @@ import { filters } from '../reducers';
 import config from '../../config';
 
 class MainScreen extends Component {
-
-  scrollToMainScreen() {
-    smoothscroll(document.querySelector('#mainScreen'));
-  }
-
   render() {
     return (
       <Router basename={config[process.env.NODE_ENV].basename}>
@@ -31,7 +25,6 @@ class MainScreen extends Component {
                   activeClassName={css.active}
                   key={cat}
                   className={css[filters[cat].icon]}
-                  onClick={this.scrollToMainScreen}
                   to={`/categories/${cat}`}
                 >{
                   filters[cat].name.split('|').map((text, i) => (<span key={i}>{text}<br/></span>))
