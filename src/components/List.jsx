@@ -16,7 +16,9 @@ const List = ({ category, items }) => (
       <div className={css.header}>
         <LazyImage src={macaronTalking} alt="Macaron Talking" width="230" height="228"/>
         <div className={css.content}>
-          <h2>{filters[category].name.replace('|', ' ')}</h2>
+          <h2>{filters[category].title ?
+          filters[category].title :
+          filters[category].name.replace('|', ' ')}</h2>
           <p>{filters[category].description}</p>
         </div>
       </div>
